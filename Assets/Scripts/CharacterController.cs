@@ -6,7 +6,8 @@ public class CharacterController : MonoBehaviour
     private Rigidbody2D characterRigidBody = null;
 
     [SerializeField]
-    private float jumpForce = 50.0f;
+    [Range(1, 10)]
+    private float jumpForce = 5.0f;
 
     private void Update()
     {
