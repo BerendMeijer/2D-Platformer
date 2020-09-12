@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 964660968916941179}
   - component: {fileID: 430230392}
   - component: {fileID: 185633823}
+  - component: {fileID: 185633824}
   m_Layer: 0
   m_Name: Character
   m_TagString: Untagged
@@ -141,7 +142,7 @@ ConstantForce2D:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6494362450176763533}
   m_Enabled: 1
-  m_Force: {x: 2, y: 0}
+  m_Force: {x: 5, y: 0}
   m_RelativeForce: {x: 0, y: 0}
   m_Torque: 0
 --- !u!114 &185633823
@@ -158,3 +159,17 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   characterRigidBody: {fileID: 964660968916941179}
   jumpForce: 5
+--- !u!114 &185633824
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6494362450176763533}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ca4c949b93e967d408d6022a485b643f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rigidBody: {fileID: 964660968916941179}
+  velocityLimit: {x: 4, y: 1e+9}
