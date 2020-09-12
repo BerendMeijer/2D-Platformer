@@ -172,4 +172,4 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rigidBody: {fileID: 964660968916941179}
-  velocityLimit: {x: 4, y: 1e+9}
+  velocityLimit: {x: 5, y: 1e+9}
