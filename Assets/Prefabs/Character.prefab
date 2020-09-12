@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 6494362450176763570}
   - component: {fileID: 964660968916941179}
   - component: {fileID: 430230392}
+  - component: {fileID: 185633823}
   m_Layer: 0
   m_Name: Character
   m_TagString: Untagged
@@ -126,7 +127,7 @@ Rigidbody2D:
   m_Mass: 0.48999998
   m_LinearDrag: 0.3
   m_AngularDrag: 0.05
-  m_GravityScale: 2
+  m_GravityScale: 3
   m_Material: {fileID: 6200000, guid: a35d221485c53a6438d22eb149074c72, type: 2}
   m_Interpolate: 1
   m_SleepingMode: 1
@@ -143,3 +144,17 @@ ConstantForce2D:
   m_Force: {x: 2, y: 0}
   m_RelativeForce: {x: 0, y: 0}
   m_Torque: 0
+--- !u!114 &185633823
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6494362450176763533}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5033e6595ddf22a40bc9883e7ff180fc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  characterRigidBody: {fileID: 964660968916941179}
+  jumpForce: 5
