@@ -377,30 +377,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ac0b09e7857660247b1477e93731de29, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!1 &1920834893 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 6494362450176763533, guid: fa4b294e43f23744b94490705d0a990b, type: 3}
-  m_PrefabInstance: {fileID: 6494362449758107538}
-  m_PrefabAsset: {fileID: 0}
---- !u!95 &1920834900
-Animator:
-  serializedVersion: 3
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1920834893}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: e5e650b54be06d044903986292cf89e5, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &1921674740
 GameObject:
   m_ObjectHideFlags: 0
@@ -580,9 +556,5 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 6494362450176763571, guid: fa4b294e43f23744b94490705d0a990b, type: 3}
-      propertyPath: m_Sprite
-      value: 
-      objectReference: {fileID: 7152930139536384079, guid: b5810651d333c304ca578061938bb37b, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fa4b294e43f23744b94490705d0a990b, type: 3}
