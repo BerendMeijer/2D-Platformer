@@ -6,7 +6,7 @@ public class CharacterAnimatorParameterUpdater : MonoBehaviour
     private Rigidbody2D rigidBody = null;
 
     [SerializeField]
-    private CharacterController characterController = null;
+    private CharacterMovementController characterController = null;
 
     [SerializeField]
     private Animator animator = null;

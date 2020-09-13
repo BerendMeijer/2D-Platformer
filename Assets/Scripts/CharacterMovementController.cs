@@ -1,7 +1,10 @@
 ﻿using UnityEngine;
 
-public class CharacterController : MonoBehaviour
+public class CharacterMovementController : MonoBehaviour
 {
+    public delegate void OnJumpDelegate();
+    public OnJumpDelegate OnJump;
+
     [SerializeField]
     private Rigidbody2D characterRigidBody = null;
 
@@ -17,6 +20,7 @@ public class CharacterController : MonoBehaviour
     private float groundCheckDistance = 0.05f;
 
     [SerializeField]
+    [Tooltip("In seconds.")]
     private float jumpCooldownTime = 0.5f;
 
     private CountDownTimer jumpCooldownTimer = new CountDownTimer(() => Time.timeSinceLevelLoad);
@@ -27,6 +31,7 @@ public class CharacterController : MonoBehaviour
         {
             characterRigidBody.AddForce(Vector2.up * jumpForce, ForceMode2D.Impulse);
             jumpCooldownTimer.StartTimer(jumpCooldownTime);
+            OnJump?.Invoke();
         }
     }
 
@@ -35,6 +40,9 @@ public class CharacterController : MonoBehaviour
         return jumpCooldownTimer.IsRunning();
     }
 
+    /// <summary>
+    /// Checks whether there is a collider underneath the character with maximum distance of 'groundCheckDistance'.
+    /// </summary>
     public bool IsGrounded()
     {
         return Physics2DExtensions.BoxCast(characterBoxCollider.GetWorldPosition(),
