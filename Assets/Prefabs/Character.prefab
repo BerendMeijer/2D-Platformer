@@ -118,6 +118,7 @@ MonoBehaviour:
   rigidBody: {fileID: 964660968916941179}
   characterController: {fileID: 185633823}
   animator: {fileID: 4300878747081046809}
+  maxAbsoluteVerticalVelocityForJumpProgress: 10
 --- !u!1 &6494362450176763533
 GameObject:
   m_ObjectHideFlags: 0
