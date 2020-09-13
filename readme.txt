@@ -9,6 +9,7 @@ Decisions I've made to improve gamefeel:
   It's fun to see the character bouncing through the level.
 - Made colliders in the level as smooth as possible to avoid getting stuck by any edges.
 - Added some background music because the world didn't feel very immersive without it.
+- Added a camera script that follows the player smoothly, because it doesn't feel nice if the camera is stuck to the player.
 
 Time spent on the assignment: 9-10 hours.
 
