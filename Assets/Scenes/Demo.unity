@@ -508,25 +508,9 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 185633823, guid: fa4b294e43f23744b94490705d0a990b, type: 3}
-      propertyPath: jumpCooldownTime
-      value: 0.3
-      objectReference: {fileID: 0}
-    - target: {fileID: 2977915593445306776, guid: fa4b294e43f23744b94490705d0a990b, type: 3}
-      propertyPath: m_Layer
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 4952918778149008599, guid: fa4b294e43f23744b94490705d0a990b, type: 3}
-      propertyPath: m_Sprite
-      value: 
-      objectReference: {fileID: 7152930139536384079, guid: b5810651d333c304ca578061938bb37b, type: 3}
     - target: {fileID: 6494362450176763533, guid: fa4b294e43f23744b94490705d0a990b, type: 3}
       propertyPath: m_Name
       value: Character
-      objectReference: {fileID: 0}
-    - target: {fileID: 6494362450176763533, guid: fa4b294e43f23744b94490705d0a990b, type: 3}
-      propertyPath: m_Layer
-      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 6494362450176763568, guid: fa4b294e43f23744b94490705d0a990b, type: 3}
       propertyPath: m_LocalPosition.x

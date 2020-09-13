@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 4952918778149008599}
   - component: {fileID: 4300878747081046809}
   - component: {fileID: 3978247402503325872}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: Sprite
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -116,6 +116,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rigidBody: {fileID: 964660968916941179}
+  characterController: {fileID: 185633823}
   animator: {fileID: 4300878747081046809}
 --- !u!1 &6494362450176763533
 GameObject:
@@ -131,7 +132,7 @@ GameObject:
   - component: {fileID: 430230392}
   - component: {fileID: 185633823}
   - component: {fileID: 185633824}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: Character
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -227,6 +228,7 @@ MonoBehaviour:
   characterBoxCollider: {fileID: 6494362450176763570}
   jumpForce: 5.23
   groundCheckDistance: 0.05
+  jumpCooldownTime: 0.3
 --- !u!114 &185633824
 MonoBehaviour:
   m_ObjectHideFlags: 0
