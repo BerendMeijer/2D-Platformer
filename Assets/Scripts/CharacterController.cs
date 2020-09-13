@@ -19,29 +19,20 @@ public class CharacterController : MonoBehaviour
     [SerializeField]
     private float jumpCooldownTime = 0.5f;
 
-    private float? activeJumpCooldownTime = 0.0f;
+    private CountDownTimer jumpCooldownTimer = new CountDownTimer(() => Time.timeSinceLevelLoad);
 
     private void Update()
     {
         if (Input.GetButton("Jump") && !IsJumpCooldownActive() && IsGrounded())
         {
             characterRigidBody.AddForce(Vector2.up * jumpForce, ForceMode2D.Impulse);
-            activeJumpCooldownTime = jumpCooldownTime;
-        }
-
-        if (activeJumpCooldownTime.HasValue)
-        {
-            activeJumpCooldownTime = activeJumpCooldownTime.Value - Time.deltaTime;
-            if (activeJumpCooldownTime < 0.0f)
-            {
-                activeJumpCooldownTime = null;
-            }
+            jumpCooldownTimer.StartTimer(jumpCooldownTime);
         }
     }
 
     private bool IsJumpCooldownActive()
     {
-        return activeJumpCooldownTime.HasValue;
+        return jumpCooldownTimer.IsRunning();
     }
 
     public bool IsGrounded()
